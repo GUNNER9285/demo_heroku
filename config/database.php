@@ -62,7 +62,7 @@ if(getenv('APP_ENV') == 'local') {
     ];
 }
 else{
-    $url = parse_url("postgres://degqjbbgbporhw:63299dfff048c2d63fe353587d355dd43fb3b3bc33f017a35fe4fda15e7867a4@ec2-54-235-94-36.compute-1.amazonaws.com:5432/d8hv0n4q1gtsnf");
+    $url = parse_url(getenv("DATABASE_URL"));
     $host = $url["host"];
     $username = $url["user"];
     $password = $url["pass"];
