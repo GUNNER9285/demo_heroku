@@ -16,8 +16,9 @@
 
 <a href="/show" class="btn btn-link">Show</a> <br> <br>
 
+<p>Click me too!</p>
 <p>If you click on me, I will disappear.</p>
 <p>Click me away!</p>
-<p>Click me too!</p>
+
 
 @endsection()
