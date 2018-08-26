@@ -13,7 +13,7 @@ class CreatePeoplesTable extends Migration
      */
     public function up()
     {
-        Schema::create('people', function (Blueprint $table) {
+        Schema::create('peoples', function (Blueprint $table) {
             $table->increments('id');
             $table->String('firstname');
             $table->String('lastname');
@@ -29,6 +29,6 @@ class CreatePeoplesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('people');
+        Schema::dropIfExists('peoples');
     }
 }
